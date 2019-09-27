@@ -1,0 +1,10 @@
+{
+    "name": "vladimirloskutov/php-project-lvl1",
+    "authors": [
+        {
+            "name": "Vladimir Loskutov",
+            "email": "vladimirloskutov@icloud.com"
+        }
+    ],
+    "require": {}
+}
