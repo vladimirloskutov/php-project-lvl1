@@ -1,11 +1,18 @@
 {
     "name": "vladimirloskutov/php-project-lvl1",
-    "bin": ["bin/brain-games"],
     "authors": [
         {
             "name": "Vladimir Loskutov",
             "email": "vladimirloskutov@icloud.com"
         }
     ],
-    "require": {}
+    "bin": ["bin/brain-games"],
+    "autoload": {
+        "files": [
+            "src/cli.php"
+        ]
+    },
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.11"
+    }
 }
