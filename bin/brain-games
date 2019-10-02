@@ -1,2 +1,11 @@
-#!/bin/sh
-echo "Welcome to the Brain Games!"
+#!/usr/bin/env php
+
+<?php
+
+$autoloadPath1 = __DIR__ . '/../vendor/autoload.php';
+
+require_once $autoloadPath1;
+
+use function \BrainGames\Cli\run;
+
+run();
