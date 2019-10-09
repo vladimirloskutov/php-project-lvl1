@@ -6,13 +6,17 @@
             "email": "vladimirloskutov@icloud.com"
         }
     ],
-    "bin": ["bin/brain-games"],
+    "bin": [
+        "bin/brain-games",
+        "bin/brain-even"
+    ],
     "scripts": {
         "phpcs": "phpcs"
     },
     "autoload": {
         "files": [
-            "src/cli.php"
+            "src/cli.php",
+            "src/even.php"
         ]
     },
     "require": {
