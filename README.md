@@ -1,3 +1,4 @@
 <a href="https://codeclimate.com/github/vladimirloskutov/php-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/a8817a3ba5a7f019f53c/maintainability" /></a>
 <a href="https://codeclimate.com/github/vladimirloskutov/php-project-lvl1/test_coverage"><img src="https://api.codeclimate.com/v1/badges/a8817a3ba5a7f019f53c/test_coverage" /></a>
 [![Build Status](https://travis-ci.com/vladimirloskutov/php-project-lvl1.svg?branch=master)](https://travis-ci.com/vladimirloskutov/php-project-lvl1)
+
