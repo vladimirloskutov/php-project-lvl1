@@ -4,7 +4,7 @@
  * Актуализировать комментарий перед окончанием проекта
  */
 
-namespace BrainGames\Cli;
+namespace BrainGames\Engine;
 
 use function cli\line;
 use function cli\prompt;
