@@ -4,6 +4,6 @@
 Установка пакета глобально и запуск игры brain-even:
 <a href="https://asciinema.org/a/yaFZeg2JunYGdxGUQrDXSYlcy" target="_blank"><img src="https://asciinema.org/a/yaFZeg2JunYGdxGUQrDXSYlcy.svg" /></a>
 Запуск игры brain-calc:
-<a href="https://asciinema.org/a/aGpooXWDbzljTuLMzG1EbadNS" target="_blank"><img src="https://asciinema.org/a/aGpooXWDbzljTuLMzG1EbadNS.svg" /></a>
+<a href="https://asciinema.org/a/Nzibyo50LvejC3xFc1v2pUcKt" target="_blank"><img src="https://asciinema.org/a/Nzibyo50LvejC3xFc1v2pUcKt.svg" /></a>
 
 
