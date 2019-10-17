@@ -27,7 +27,7 @@ function run($description, $gameData)
         $answer = prompt('Your answer');
 
         $correctAnswer = $value[1];
-        if ($answer === $correctAnswer) {
+        if ($answer === (string) $correctAnswer) {
             line('Correct!');
         } else {
             line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnswer);
