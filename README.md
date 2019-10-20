@@ -10,4 +10,6 @@
 
 <a href="https://asciinema.org/a/Nzibyo50LvejC3xFc1v2pUcKt" target="_blank"><img src="https://asciinema.org/a/Nzibyo50LvejC3xFc1v2pUcKt.svg" /></a>
 
+Запуск игры brain-gcd:
 
+<a href="https://asciinema.org/a/2XgLeTKSoxtjJQIQsCjBmlKyY" target="_blank"><img src="https://asciinema.org/a/2XgLeTKSoxtjJQIQsCjBmlKyY.svg" /></a>
