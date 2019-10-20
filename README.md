@@ -13,3 +13,7 @@
 Запуск игры brain-gcd:
 
 <a href="https://asciinema.org/a/2XgLeTKSoxtjJQIQsCjBmlKyY" target="_blank"><img src="https://asciinema.org/a/2XgLeTKSoxtjJQIQsCjBmlKyY.svg" /></a>
+
+Запуск игры brain-progression:
+
+<a href="https://asciinema.org/a/TArzrCzxKDq7sSALjvoWtTTY8" target="_blank"><img src="https://asciinema.org/a/TArzrCzxKDq7sSALjvoWtTTY8.svg" /></a>
