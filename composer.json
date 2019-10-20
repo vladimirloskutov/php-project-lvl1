@@ -10,7 +10,8 @@
         "bin/brain-games",
         "bin/brain-even",
         "bin/brain-calc",
-        "bin/brain-gcd"
+        "bin/brain-gcd",
+        "bin/brain-progression"
     ],
     "scripts": {
         "phpcs": "phpcs"
@@ -20,7 +21,8 @@
             "src/engine.php",
             "src/even.php",
             "src/calc.php",
-            "src/gcd.php"
+            "src/gcd.php",
+            "src/progression.php"
         ]
     },
     "require": {
