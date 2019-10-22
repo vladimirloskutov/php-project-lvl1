@@ -2,9 +2,11 @@
 <a href="https://codeclimate.com/github/vladimirloskutov/php-project-lvl1/test_coverage"><img src="https://api.codeclimate.com/v1/badges/a8817a3ba5a7f019f53c/test_coverage" /></a>
 [![Build Status](https://travis-ci.com/vladimirloskutov/php-project-lvl1.svg?branch=master)](https://travis-ci.com/vladimirloskutov/php-project-lvl1)
 
-Установка пакета глобально и запуск игры brain-even:
+Установка пакета глобально:
 
-<a href="https://asciinema.org/a/yaFZeg2JunYGdxGUQrDXSYlcy" target="_blank"><img src="https://asciinema.org/a/yaFZeg2JunYGdxGUQrDXSYlcy.svg" /></a>
+Запуск игры brain-even:
+
+<a href="https://asciinema.org/a/EihAqYFFqVrSNSFYG1O31l4NB" target="_blank"><img src="https://asciinema.org/a/EihAqYFFqVrSNSFYG1O31l4NB.svg" /></a>
 
 Запуск игры brain-calc:
 
