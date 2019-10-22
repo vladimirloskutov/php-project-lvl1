@@ -8,7 +8,7 @@ namespace BrainGames\Progression;
 
 use function BrainGames\Engine\run as runGame;
 
-const DESCRIPTION = 'What number is missing in the progression?';
+define("DESCRIPTION", "What number is missing in the progression?");
 
 /**
  * Актуализировать комментарий перед окончанием проекта

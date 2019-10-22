@@ -8,7 +8,7 @@ namespace BrainGames\Even;
 
 use function BrainGames\Engine\run as runGame;
 
-const DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".';
+define("DESCRIPTION", "Answer 'yes' if the number is even, otherwise answer 'no'.");
 
 /**
  * Актуализировать комментарий перед окончанием проекта

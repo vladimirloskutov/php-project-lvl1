@@ -8,7 +8,7 @@ namespace BrainGames\Calc;
 
 use function BrainGames\Engine\run as runGame;
 
-const DESCRIPTION = 'What is the result of the expression?';
+define("DESCRIPTION", "What is the result of the expression?");
 
 /**
  * Актуализировать комментарий перед окончанием проекта

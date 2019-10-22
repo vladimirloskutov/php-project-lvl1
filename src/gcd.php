@@ -8,7 +8,7 @@ namespace BrainGames\Gcd;
 
 use function BrainGames\Engine\run as runGame;
 
-const DESCRIPTION = 'Find the greatest common divisor of given numbers.';
+define("DESCRIPTION", "Find the greatest common divisor of given numbers.");
 
 /**
  * Актуализировать комментарий перед окончанием проекта
