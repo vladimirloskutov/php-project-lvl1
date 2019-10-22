@@ -4,7 +4,7 @@
  * Актуализировать комментарий перед окончанием проекта
  */
 
-namespace BrainGames\Progression;
+namespace BrainGames\games\Progression;
 
 use function BrainGames\Engine\run as runGame;
 

@@ -4,7 +4,7 @@
  * Актуализировать комментарий перед окончанием проекта
  */
 
-namespace BrainGames\Prime;
+namespace BrainGames\games\Prime;
 
 use function BrainGames\Engine\run as runGame;
 

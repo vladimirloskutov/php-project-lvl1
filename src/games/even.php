@@ -4,7 +4,7 @@
  * Актуализировать комментарий перед окончанием проекта
  */
 
-namespace BrainGames\Even;
+namespace BrainGames\games\Even;
 
 use function BrainGames\Engine\run as runGame;
 
