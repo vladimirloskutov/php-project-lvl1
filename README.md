@@ -4,6 +4,8 @@
 
 Установка пакета глобально:
 
+<a href="https://asciinema.org/a/UByw1cXLjGPo0LGFAkbMLnfjB" target="_blank"><img src="https://asciinema.org/a/UByw1cXLjGPo0LGFAkbMLnfjB.svg" /></a>
+
 Запуск игры brain-even:
 
 <a href="https://asciinema.org/a/EihAqYFFqVrSNSFYG1O31l4NB" target="_blank"><img src="https://asciinema.org/a/EihAqYFFqVrSNSFYG1O31l4NB.svg" /></a>
