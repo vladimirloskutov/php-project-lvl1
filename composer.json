@@ -1,9 +1,14 @@
 {
     "name": "vladimirloskutov/php-project-lvl1",
+    "description": "'Brain games' is the set of 5 games for check your intellect",
+    "keywords": ["hexlet", "php", "brain games"],
+    "type": "project",
     "authors": [
         {
             "name": "Vladimir Loskutov",
-            "email": "vladimirloskutov@icloud.com"
+            "email": "vladimirloskutov@icloud.com",
+            "homepage": "https://github.com/vladimirloskutov/",
+            "role": "Developer"
         }
     ],
     "bin": [
@@ -13,9 +18,6 @@
         "bin/brain-progression",
         "bin/brain-prime"
     ],
-    "scripts": {
-        "phpcs": "phpcs"
-    },
     "autoload": {
         "files": [
             "src/engine.php",
@@ -31,5 +33,8 @@
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "*"
+    },
+    "scripts": {
+        "phpcs": "phpcs"
     }
 }
