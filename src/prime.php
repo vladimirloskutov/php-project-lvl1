@@ -15,8 +15,7 @@ const DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no
  */
 function run()
 {
-    $getGameDataFunction = function()
-    {
+    $getGameDataFunction = function () {
         $result[] = rand(1, 100);
 
         if ($result[0] === 1) {

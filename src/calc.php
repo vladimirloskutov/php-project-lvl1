@@ -15,8 +15,7 @@ const DESCRIPTION = 'What is the result of the expression?';
  */
 function run()
 {
-    $getGameDataFunction = function()
-    {
+    $getGameDataFunction = function () {
         $numbers[] = rand(1, 100);
         $numbers[] = rand(1, 100);
         $operators = ['+', '-', '*'];

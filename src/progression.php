@@ -15,8 +15,7 @@ const DESCRIPTION = 'What number is missing in the progression?';
  */
 function run()
 {
-    $getGameDataFunction = function()
-    {
+    $getGameDataFunction = function () {
         $firstMember = rand(1, 100);
         $difference = rand(1, 10);
         $progression[] = $firstMember;
@@ -24,7 +23,6 @@ function run()
         $lengthOfProgression = 10;
 
         for ($i = 1; $i < $lengthOfProgression; $i++) {
-
             $progression[] = $progression[$i - 1] + $difference;
         }
 

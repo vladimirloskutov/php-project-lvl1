@@ -15,8 +15,7 @@ const DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
  */
 function run()
 {
-    $getGameDataFunction = function()
-    {
+    $getGameDataFunction = function () {
         $result[] = rand(1, 100);
         $result[] = ($result[0] % 2 === 0 ? 'yes' : 'no');
 

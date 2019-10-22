@@ -15,8 +15,7 @@ const DESCRIPTION = 'Find the greatest common divisor of given numbers.';
  */
 function run()
 {
-    $getGameDataFunction = function()
-    {
+    $getGameDataFunction = function () {
         $numbers[] = rand(1, 100);
         $numbers[] = rand(1, 100);
 
@@ -31,7 +30,6 @@ function run()
         }
 
         for ($i = $minNumber; $i > 0; $i--) {
-
             if ($maxNumber % $i === 0 && $minNumber % $i === 0) {
                 $result[] = $i;
                 break;
