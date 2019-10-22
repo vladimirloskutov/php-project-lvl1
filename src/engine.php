@@ -9,7 +9,7 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
-CONST COUNT_ROUNDS = 3;
+const COUNT_ROUNDS = 3;
 
 /**
  * Актуализировать комментарий перед окончанием проекта
