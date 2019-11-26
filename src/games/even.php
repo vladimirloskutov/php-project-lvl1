@@ -13,11 +13,17 @@ define("DESCRIPTION", "Answer 'yes' if the number is even, otherwise answer 'no'
 /**
  * Актуализировать комментарий перед окончанием проекта
  */
+
+function isEven($number)
+{
+    return $number % 2 === 0;
+}
+
 function run()
 {
     $getGameDataFunction = function () {
         $result[] = rand(1, 100);
-        $result[] = ($result[0] % 2 === 0 ? 'yes' : 'no');
+        $result[] = isEven($result[0]) ? 'yes' : 'no';
 
         return $result;
     };
