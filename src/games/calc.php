@@ -21,15 +21,19 @@ function run()
         $operators = ['+', '-', '*'];
         $operation = array_rand($operators, 1);
 
-        if ($operators[$operation] === '+') {
-            $result[] = "{$numbers[0]} {$operators[$operation]} {$numbers[1]}";
-            $result[] = $numbers[0] + $numbers[1];
-        } elseif ($operators[$operation] === '-') {
-            $result[] = "{$numbers[0]} {$operators[$operation]} {$numbers[1]}";
-            $result[] = $numbers[0] - $numbers[1];
-        } else {
-            $result[] = "{$numbers[0]} {$operators[$operation]} {$numbers[1]}";
-            $result[] = $numbers[0] * $numbers[1];
+        switch ($operators[$operation]) {
+            case '+':
+                $result[] = "{$numbers[0]} {$operators[$operation]} {$numbers[1]}";
+                $result[] = $numbers[0] + $numbers[1];
+                break;
+            case '-':
+                $result[] = "{$numbers[0]} {$operators[$operation]} {$numbers[1]}";
+                $result[] = $numbers[0] - $numbers[1];
+                break;
+            case '*':
+                $result[] = "{$numbers[0]} {$operators[$operation]} {$numbers[1]}";
+                $result[] = $numbers[0] * $numbers[1];
+                break;
         }
 
         return $result;
