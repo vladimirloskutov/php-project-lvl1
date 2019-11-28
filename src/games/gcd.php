@@ -1,43 +1,30 @@
 <?php
 
-/**
- * Актуализировать комментарий перед окончанием проекта
- */
-
 namespace BrainGames\games\Gcd;
 
 use function BrainGames\Engine\run as runGame;
 
 define("DESCRIPTION", "Find the greatest common divisor of given numbers.");
 
-/**
- * Актуализировать комментарий перед окончанием проекта
- */
+function calcGcd($number1, $number2)
+{
+    if ($number2 == 0) {
+        return $number1;
+    }
+    return calcGcd($number2, $number1 % $number2);
+}
+
 function run()
 {
-    $getGameDataFunction = function () {
-        $numbers[] = rand(1, 100);
-        $numbers[] = rand(1, 100);
+    $getGameData = function () {
+        $number1 = rand(1, 100);
+        $number2 = rand(1, 100);
 
-        $result[] = "{$numbers[0]} {$numbers[1]}";
+        $question = "{$number1} {$number2}";
+        $answer = calcGcd($number1, $number2);
 
-        if ($numbers[0] > $numbers[1]) {
-            $maxNumber = $numbers[0];
-            $minNumber = $numbers[1];
-        } else {
-            $maxNumber = $numbers[1];
-            $minNumber = $numbers[0];
-        }
-
-        for ($i = $minNumber; $i > 0; $i--) {
-            if ($maxNumber % $i === 0 && $minNumber % $i === 0) {
-                $result[] = $i;
-                break;
-            }
-        }
-
-        return $result;
+        return [$question, $answer];
     };
 
-    runGame(DESCRIPTION, $getGameDataFunction);
+    runGame(DESCRIPTION, $getGameData);
 }

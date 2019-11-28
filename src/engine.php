@@ -14,7 +14,7 @@ define("COUNT_ROUNDS", 3);
 /**
  * Актуализировать комментарий перед окончанием проекта
  */
-function run($description, $gameData)
+function run($description, $getGameData)
 {
     line('Welcome to the Brain Game!');
     line($description);
@@ -22,11 +22,10 @@ function run($description, $gameData)
     line("Hello, %s!", $name);
 
     for ($roundNumber = 1; $roundNumber <= COUNT_ROUNDS; $roundNumber++) {
-        $value = $gameData();
-        line('Question: %s', $value[0]);
+        [$question, $correctAnswer] = $getGameData();
+        line('Question: %s', $question);
         $answer = prompt('Your answer');
 
-        $correctAnswer = $value[1];
         if ($answer === (string) $correctAnswer) {
             line('Correct!');
         } else {
@@ -36,7 +35,5 @@ function run($description, $gameData)
         }
     }
 
-    if ($roundNumber === 4) {
-        line("Congratulations, %s!", $name);
-    }
+    line("Congratulations, %s!", $name);
 }
