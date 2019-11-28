@@ -1,38 +1,36 @@
 <?php
 
-/**
- * Актуализировать комментарий перед окончанием проекта
- */
-
 namespace BrainGames\games\Progression;
 
 use function BrainGames\Engine\run as runGame;
 
-define("DESCRIPTION", "What number is missing in the progression?");
+const DESCRIPTION = 'What number is missing in the progression?';
 
-/**
- * Актуализировать комментарий перед окончанием проекта
- */
+function getProgression($start, $step, $length)
+{
+    $result = [];
+    for ($i = 0; $i < $length; $i++) {
+        $result[] = $start + $step * $i;
+    }
+    return $result;
+}
+
 function run()
 {
-    $getGameDataFunction = function () {
-        $firstMember = rand(1, 100);
-        $difference = rand(1, 10);
-        $progression[] = $firstMember;
-
+    $getGameData = function () {
+        $startOfProgression = rand(1, 100);
+        $stepOfProgression = rand(1, 10);
         $lengthOfProgression = 10;
 
-        for ($i = 1; $i < $lengthOfProgression; $i++) {
-            $progression[] = $progression[$i - 1] + $difference;
-        }
+        $progression = getProgression($startOfProgression, $stepOfProgression, $lengthOfProgression);
 
-        $randomKey = array_rand($progression);
-        $result[1] = $progression[$randomKey];
-        $progression[$randomKey] = '..';
-        $result[0] = implode(' ', $progression);
+        $secretElement = array_rand($progression);
+        $answer = $progression[$secretElement];
+        $progression[$secretElement] = '..';
+        $question = implode(' ', $progression);
 
-        return $result;
+        return [$question, $answer];
     };
 
-    runGame(DESCRIPTION, $getGameDataFunction);
+    runGame(DESCRIPTION, $getGameData);
 }

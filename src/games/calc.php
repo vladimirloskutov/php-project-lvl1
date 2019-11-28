@@ -1,43 +1,33 @@
 <?php
 
-/**
- * Актуализировать комментарий перед окончанием проекта
- */
-
 namespace BrainGames\games\Calc;
 
 use function BrainGames\Engine\run as runGame;
 
-define("DESCRIPTION", "What is the result of the expression?");
+const DESCRIPTION = 'What is the result of the expression?';
+const OPERATIONS = ['*','+','-'];
 
-$operators = ['+', '-', '*'];
-
-/**
- * Актуализировать комментарий перед окончанием проекта
- */
 function run()
 {
     $getGameDataFunction = function () {
-        $numbers[] = rand(1, 100);
-        $numbers[] = rand(1, 100);
-        $operation = array_rand($operators, 1);
+        $number1 = rand(1, 100);
+        $number2 = rand(1, 100);
+        $operation = array_rand(OPERATIONS, 1);
 
-        switch ($operators[$operation]) {
+        $question = "{$number1} {$operation} {$number2}";
+        switch ($operation) {
             case '+':
-                $result[] = "{$numbers[0]} {$operators[$operation]} {$numbers[1]}";
-                $result[] = $numbers[0] + $numbers[1];
+                $answer = $number1 + $number2;
                 break;
             case '-':
-                $result[] = "{$numbers[0]} {$operators[$operation]} {$numbers[1]}";
-                $result[] = $numbers[0] - $numbers[1];
+                $answer = $number1 - $number2;
                 break;
             case '*':
-                $result[] = "{$numbers[0]} {$operators[$operation]} {$numbers[1]}";
-                $result[] = $numbers[0] * $numbers[1];
+                $answer = $number1 * $number2;
                 break;
         }
 
-        return $result;
+        return [$question, $answer];
     };
 
     runGame(DESCRIPTION, $getGameDataFunction);

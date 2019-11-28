@@ -1,18 +1,10 @@
 <?php
 
-/**
- * Актуализировать комментарий перед окончанием проекта
- */
-
 namespace BrainGames\games\Even;
 
 use function BrainGames\Engine\run as runGame;
 
-define("DESCRIPTION", "Answer 'yes' if the number is even, otherwise answer 'no'.");
-
-/**
- * Актуализировать комментарий перед окончанием проекта
- */
+const DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function isEven($number)
 {
