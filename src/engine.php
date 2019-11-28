@@ -1,9 +1,5 @@
 <?php
 
-/**
- * Актуализировать комментарий перед окончанием проекта
- */
-
 namespace BrainGames\Engine;
 
 use function cli\line;
@@ -11,9 +7,6 @@ use function cli\prompt;
 
 define("COUNT_ROUNDS", 3);
 
-/**
- * Актуализировать комментарий перед окончанием проекта
- */
 function run($description, $getGameData)
 {
     line('Welcome to the Brain Game!');
