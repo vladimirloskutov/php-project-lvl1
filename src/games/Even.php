@@ -11,12 +11,12 @@ function isEven($number)
 
 function run()
 {
-    $getGameDataFunction = function () {
+    $getGameData = function () {
         $result[] = rand(1, 100);
         $result[] = isEven($result[0]) ? 'yes' : 'no';
 
         return $result;
     };
 
-    runGame("Answer 'yes' if the number is even, otherwise answer 'no'.", $getGameDataFunction);
+    runGame("Answer 'yes' if the number is even, otherwise answer 'no'.", $getGameData);
 }

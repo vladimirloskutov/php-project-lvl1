@@ -8,7 +8,7 @@ define("OPERATIONS", ['*','+','-']);
 
 function run()
 {
-    $getGameDataFunction = function () {
+    $getGameData = function () {
         $number1 = rand(1, 100);
         $number2 = rand(1, 100);
         $operation = array_rand(OPERATIONS, 1);
@@ -29,5 +29,5 @@ function run()
         return [$question, $answer];
     };
 
-    runGame("What is the result of the expression?", $getGameDataFunction);
+    runGame("What is the result of the expression?", $getGameData);
 }
