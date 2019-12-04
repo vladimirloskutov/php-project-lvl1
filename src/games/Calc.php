@@ -4,7 +4,8 @@ namespace BrainGames\games\Calc;
 
 use function BrainGames\Engine\run as runGame;
 
-define("OPERATIONS", ['*','+','-']);
+const DESCRIPTION = "What is the result of the expression?";
+const OPERATIONS = ['*','+','-'];
 
 function run()
 {
@@ -29,5 +30,5 @@ function run()
         return [$question, $answer];
     };
 
-    runGame("What is the result of the expression?", $getGameData);
+    runGame(DESCRIPTION, $getGameData);
 }
